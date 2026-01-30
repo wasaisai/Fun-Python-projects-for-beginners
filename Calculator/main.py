@@ -1,44 +1,26 @@
-import calc
-import sys
+import cli
 import gui
-
-def run_cli():
-    if len(sys.argv) > 1:
-        expr = sys.argv[1]
-        result = calc.calculate_express(expr)
-        print("结果是：", result)
-        return
-  
-    while True:
-        expr = input("请输入表达式（如 3 + 5），或 q 退出：")
-        
-        if expr == "q":
-            print("退出计算器 👋")
-            break 
-        
-        result = calc.calculate_express(expr)
-        print("结果是：", result)
-
-#选择运行模式
-def choice_mode():
-    print("请选择运行模式：")
-    print("1. 命令行（CLI）")
-    print("2. 图形界面（GUI）")
-
-    choice = input("请输入 1 或 2：").strip()
-    return choice
-    
+import mode
 
 #负责主要流程，  
 def main():
     print("\n=== 简易计算器 ===\n")
-   
-    choice = choice_mode()
     
-    if choice == "1":
-        run_cli()
-    elif choice == "2":
+    
+    
+    choice = mode.get_load_from_argv()
+    
+    if not choice:
+        choice = mode.choice_mode()
+        
+    mode.save_mode(choice)
+   
+    if choice == "cli":
+        cli.run_cli()
+    elif choice == "gui":
         gui.run_gui()
+    else:
+        print("❌未知错误")
         
 
 #调用函数
