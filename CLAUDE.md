@@ -200,6 +200,8 @@ def is_valid(input_list):
    - 使用中文提交信息
    - 提交信息要简洁明了
    - 每次提交专注于一个功能或修复
+   - 提交信息末尾添加 `Co-Authored-By`，使用 GitHub 用户名格式：
+     `Co-Authored-By: wasaisai <wasaisai@users.noreply.github.com>`
 
 4. **用户交互**
    - 所有用户提示使用中文
