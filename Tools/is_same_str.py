@@ -8,8 +8,12 @@ def is_same_str(str01, str02):
     
     n = str01_len
     
-    for i in range(n):
-        if str01[i] != str02[i]:
+    # for i in range(n):
+    #     if str01[i] != str02[i]:
+    #         return False
+    
+    for char1, char2 in zip(str01, str02):
+        if char1 != char2:
             return False
     
     return True
