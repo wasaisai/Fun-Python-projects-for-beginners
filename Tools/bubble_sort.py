@@ -26,4 +26,5 @@ def main():
     print('排序结果:', result)
     
     
-main()
+if __name__ == '__main__':
+    main()

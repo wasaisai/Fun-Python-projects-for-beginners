@@ -33,4 +33,5 @@ def main():
         print(num, '的阶乘是：', result)
     
     
-main()
+if __name__ == '__main__':
+    main()

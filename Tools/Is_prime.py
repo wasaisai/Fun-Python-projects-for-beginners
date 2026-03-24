@@ -33,4 +33,5 @@ def main():
     else:
         print('不是质数')
         
-main()
+if __name__ == '__main__':
+    main()

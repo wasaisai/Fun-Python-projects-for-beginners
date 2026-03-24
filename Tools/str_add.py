@@ -1,5 +1,5 @@
 
-def func_add(expr):
+def str_add(expr):
     
     return "-".join(expr)
 
@@ -7,8 +7,10 @@ def func_add(expr):
 def main():
     expr = input('请输入需要处理的字符串')
     
-    result = func_add(expr)
+    result = str_add(expr)
     
     print(result)
-    
-main()
+   
+   
+if __name__ == '__main__':
+    main()

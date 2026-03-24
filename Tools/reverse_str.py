@@ -23,4 +23,5 @@ def main():
     
     print(reverse(expr))
     
-main()
+if __name__ == '__main__':
+    main()

@@ -25,4 +25,5 @@ def main():
     print('已删除', char, result)
     
     
-main()
+if __name__ == '__main__':
+    main()

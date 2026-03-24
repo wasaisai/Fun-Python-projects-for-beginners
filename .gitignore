@@ -1,4 +1,5 @@
 # Python 编译缓存
 __pycache__/
+tests/
 *.pyc
 *.pyo

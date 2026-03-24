@@ -17,4 +17,5 @@ def main():
     expr = input('请输入')
     calc(expr)
     
-main()
+if __name__ == '__main__':
+    main()

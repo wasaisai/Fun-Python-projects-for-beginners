@@ -46,4 +46,5 @@ def main():
     print('字符',char,'总共出现了',total_sum, '次')
     
     
-main()
+if __name__ == '__main__':
+    main()

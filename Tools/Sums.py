@@ -40,4 +40,5 @@ def main():
     print('您输入的数字之和为：', sum(expr))  
     
 
-main()
+if __name__ == '__main__':
+    main()

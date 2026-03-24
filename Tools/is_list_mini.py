@@ -41,4 +41,5 @@ def main():
     else:
         print('最小的数字是：', result)
         
-main()
+if __name__ == '__main__':
+    main()

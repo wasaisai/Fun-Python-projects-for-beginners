@@ -12,6 +12,9 @@ def parity(num):
     else:
         print('是奇数')
   
-num = int(input('请输入需要计算的数字'))
-
-parity(num)
+def main():
+    num = int(input('请输入需要计算的数字'))
+    parity(num)
+    
+if __name__ == '__main__':
+    main()

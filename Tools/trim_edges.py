@@ -1,7 +1,7 @@
 # def trim_space(expr):
 #     return expr.strip()
 
-def strip_space(expr):
+def trim_edges(expr):
     """
     去除字符串两端的空白字符
 
@@ -30,7 +30,7 @@ def main():
     程序主入口，获取用户输入并输出去除两端空白后的字符串
     """
     expr = input('请输入字符串')
-    print(strip_space(expr))
+    print(trim_edges(expr))
 
 
 if __name__ == '__main__':

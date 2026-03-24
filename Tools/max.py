@@ -43,10 +43,11 @@ def main(expr):
     print('您输入的最大值是：', max_value)
 
 
-expr = input('请输入需要计算最大值的数字列表，用空格隔开: ')
-
-if is_valid(expr) == 2:
+if __name__ == '__main__':
     expr = input('请输入需要计算最大值的数字列表，用空格隔开: ')
-    main(expr)
-else:
-    main(expr)
+
+    if is_valid(expr) == 2:
+        expr = input('请输入需要计算最大值的数字列表，用空格隔开: ')
+        main(expr)
+    else:
+        main(expr)
