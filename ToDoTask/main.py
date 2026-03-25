@@ -6,6 +6,8 @@ def add_task(file_name):
         with open(file_name, 'a', encoding='utf-8') as f:
             
             f.writelines(f"{expr}")
+            
+            check_task(file_name)
     except FileExistsError:
         print('写入文件失败')
 
@@ -36,6 +38,7 @@ def delate_task(file_name):
                         f_write.write(new_line)
     
         os.replace('task_tamp.txt', file_name)
+        check_task(file_name)
     except FileNotFoundError:
         print('操作失败')
     
