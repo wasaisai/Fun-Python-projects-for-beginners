@@ -1,0 +1,19 @@
+{
+    "log_config": {
+        "INFO": {
+            "file": "info.log",
+            "enabled": true,
+            "color": "green"
+        },
+        "ERROR": {
+            "file": "error.log",
+            "enabled": true,
+            "color": "red"
+        },
+        "DEBUG": {
+            "file": "debug.log",
+            "enabled": false
+        }
+    },
+    "max_size_mb": 10
+}
